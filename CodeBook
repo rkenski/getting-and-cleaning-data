@@ -1,0 +1,21 @@
+Most of the variables in the tidy data set follow the naming of variables in the original data. They were just summarized and reorganized. A full explanation of them can be found in the “features_info.txt” file that can  be downloaded at:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The difference is just that the measurements on the mean and standard deviation for each measurement. For each measurement, it is provided:
+- An identification of the subject
+- Identification of the activity he was performing.
+- Mean and standard deviation from triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Mean and standard deviation from triaxial Angular velocity from the gyroscope.
+
+The data cleaning process, as done by the “run_analysis.R” file, follows these steps:
+-	Download and unizp the files
+-	Merge "train" and "test" files and label columns
+-	Include activity labels in the data frame
+-	Include subject information in the data frame
+-	Extracts only the measurements on the mean and standard deviation for each measurement.
+-	Creates a second tidy data set with the average of each variable for each activity and each subject.
+-	Relabels activities and organizes table
+
+Assumptions on the analysis: 
+-	The data includes the variables on the weighted average of the frequency components (“meanFreq”()). Although a separate dimension of measurement, it is still a mean.
+-	It does not include, however, the angle vectors (angle()), for not being directly related to the measurements. 
