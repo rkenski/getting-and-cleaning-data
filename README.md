@@ -10,7 +10,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The script then cleans and processes the data in order to produced a smaller tidy data set. This new data set - “tidy.txt” - merges test and training files and provides a summary of the means and standard deviations in relation to activities and subjects.
 
 This repository contains:
-- tidy.txt : a space-delimited text file that provides a tidy data set as described below
+- tidy.txt : a tidy data set as described above and in the following files.
 - run_analysis.R : an R script that downloads the raw data files, cleans and summarizes them and produces tidy.txt
 - CodeBook.md : a markdown document describing the variables and data in tidy.txt and the assumptions of the cleaning process. 
 - README.md : the current document, with an explanation of the process and its elements. 
